@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跑马图</title>
+    <style>
+      
+        @keyframes run{
+           0%{
+            background-position: 0px 0px;
+           }
+           12%{
+            background-position: -200px 0px;
+           }
+           24%{
+            background-position: -400px 0px;
+           }
+           36%{
+            background-position: -600px 0px;
+           }
+           48%{
+            background-position: -800px 0px;
+           }
+           60%{
+            background-position: -1000px 0px;
+           }
+           72%{
+            background-position: -1200px 0px;
+           }
+           84%{
+            background-position: -1400px 0px;
+           }
+           96%{
+            background-position: -1600px 0px;
+           }
+           100%{
+            background-position: -1800px 0px;
+           }
+        }
+        .wapper{
+            width: 200px;
+            height: 100px;
+            background-image: url(horse.png);
+            background-repeat: no-repeat;
+            animation: run .5s step-end infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="wapper"></div>
+</body>
+</html>
